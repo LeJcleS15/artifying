@@ -4,6 +4,7 @@
     "hardhat": "^2.12.2"
   },
   "dependencies": {
+    "@openzeppelin/contracts": "^4.8.0",
     "dotenv": "^16.0.3",
     "files-from-path": "^0.2.6",
     "fs": "^0.0.1-security",

@@ -1,23 +1,28 @@
 import * as fs from 'fs';
 import { NFTStorage } from 'nft.storage'
 import dotenv from 'dotenv'
-import { getFilesFromPath } from 'files-from-path'
+import { Blob } from 'buffer'
+
 dotenv.config()
 
 const client = new NFTStorage({token: process.env.NFT_STORAGE_KEY})
 
 async function storeImage(filepath,filename,textname){
-    const content = await fs.readFile(filepath, () => {})
-    // const imageFile = new File([content], filename, {type: 'image/gif'})
-    console.log(content)
-    console.log(filepath,filename, textname)
-    // console.log(imageFile)
+    const content = fs.readFileSync(filepath)
+    console.log(typeof content)
+    // const image = new File([content], filename, {type: 'image/gif'})
+    const blob = new Blob([content],{type: 'image/gif'});
+    // const image = fs.writeFileSync(filepath, content);
+
+    console.log(typeof blob)
     
     // const metadata = await client.store({
     //     name: `${textname}`,
-    //     description: ``,
-    //     image: imageFile
+    //     description: `Image description here`,
+    //     image: blob
     // })
+
+    // console.log(metadata)
 }
 
 async function storeAllImages(){
@@ -25,10 +30,11 @@ async function storeAllImages(){
         const textname = file.replace(".jpg","").replaceAll("-"," ")
         // console.log(textname)
         // console.log(textname.slice(8))
-        const store = storeImage(`.src/img/${file}`,file, textname)
+        const store = storeImage(`src/img/${file}`,file, textname)
     })
 }
 
-storeAllImages()
+// storeAllImages()
 
+storeImage("src/img/Fauna-1-Complete.jpg", "Fauna-1-Complete.jpg", "Fauna 1 Complete")
 
