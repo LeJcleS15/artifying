@@ -17,7 +17,7 @@ contract Fauna2 is ERC721URIStorage, Ownable {
         "https://ipfs.io/ipfs/bafyreidln2luookclion6ka4547gwheurosaxoq46gzodju5swyepq25le/metadata.json",
         "https://ipfs.io/ipfs/bafyreibv2jusmakysaimtencvignllkjqrnk57wmxyacrbrwm3nqxxb7em/metadata.json",
         "https://ipfs.io/ipfs/bafyreibxfwpgxvgnotaguo3ji4bsjy4joi6x7spmll5t6a344oqj6szl6a/metadata.json",
-        "https://ipfs.io/ipfs/bafyreid3w4dry4fpgx457wp5onaf6luorclrg46bzvr6qnu5kjq3miaadu/metadata.json",
+        "https://ipfs.io/ipfs/bafyreiak26kbobfpvufhoimuragjemgeprmuwcmgosor6khusfatktmada/metadata.json",
         "https://ipfs.io/ipfs/bafyreiezfm6dxap367qwbzw27kvxsyxzfnztx5myhx2mwg4q6i62fwyxfq/metadata.json"
     ];
 

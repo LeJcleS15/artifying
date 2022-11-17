@@ -17,7 +17,7 @@ contract Fauna3 is ERC721URIStorage, Ownable {
         "https://ipfs.io/bafyreidperpqa4wgmpbetzj6lepdtkt7qxqdggatffiyt6oasolp6ojita/metadata.json",
         "https://ipfs.io/bafyreidrr2oulgcckaechjn35uh5cdmuznpg3gnfxjddlh2xxolayhgfpq/metadata.json",
         "https://ipfs.io/bafyreifiqtpjqrvtvsg3thgfmgkicjyyfz7qjvqrcyo4gtdcwg5sqaiuoq/metadata.json",
-        "https://ipfs.io/bafyreiak26kbobfpvufhoimuragjemgeprmuwcmgosor6khusfatktmada/metadata.json",
+        "https://ipfs.io/bafyreid3w4dry4fpgx457wp5onaf6luorclrg46bzvr6qnu5kjq3miaadu/metadata.json",
         "https://ipfs.io/bafyreia2cmijlhqsahqhji7nb4ghz5oib4s33ktzw4oswyp4q4rfjb3uai/metadata.json",
         "https://ipfs.io/bafyreieayv2ikxeogwvz3wiagut4ubifbtzd5o3f2mqqzfsebde2kijly4/metadata.json",
         "https://ipfs.io/bafyreic2kbor47z67fl54k5wnjhvccduytop2itbn6cg4uiic5usinhw7u/metadata.json",
