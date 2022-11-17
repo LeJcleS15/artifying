@@ -8,18 +8,23 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 
 
-contract Fauna1 is ERC721URIStorage, Ownable {
+contract Fauna3 is ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
 
     Counters.Counter private _tokenIdCounter;
 
     string[] faunaUrisIpfs = [
-        "https://ipfs.io/ipfs/bafyreifyj3ux7nnzjqzkuhlpwsobxncpa3r2vedh7gpgohp7xakpaxirom/metadata.json",
-        "https://ipfs.io/ipfs/bafyreic3sifkfu2lkt5lzkwxvelusycmfyudmxvuy3wi4om3yrksoblc5e/metadata.json",
-        "https://ipfs.io/ipfs/bafyreigtvt7oigssuu3ebstodpw6svbi5gbnk7mip4pmvi6vrdvgpdewee/metadata.json"
+        "https://ipfs.io/bafyreidperpqa4wgmpbetzj6lepdtkt7qxqdggatffiyt6oasolp6ojita/metadata.json",
+        "https://ipfs.io/bafyreidrr2oulgcckaechjn35uh5cdmuznpg3gnfxjddlh2xxolayhgfpq/metadata.json",
+        "https://ipfs.io/bafyreifiqtpjqrvtvsg3thgfmgkicjyyfz7qjvqrcyo4gtdcwg5sqaiuoq/metadata.json",
+        "https://ipfs.io/bafyreiak26kbobfpvufhoimuragjemgeprmuwcmgosor6khusfatktmada/metadata.json",
+        "https://ipfs.io/bafyreia2cmijlhqsahqhji7nb4ghz5oib4s33ktzw4oswyp4q4rfjb3uai/metadata.json",
+        "https://ipfs.io/bafyreieayv2ikxeogwvz3wiagut4ubifbtzd5o3f2mqqzfsebde2kijly4/metadata.json",
+        "https://ipfs.io/bafyreic2kbor47z67fl54k5wnjhvccduytop2itbn6cg4uiic5usinhw7u/metadata.json",
+        "https://ipfs.io/bafyreihry5prrixl4uplnncruntu72dzestqoceenpoekd7zv7ypyv73mi/metadata.json"
     ];
 
-    constructor() ERC721("Fauna1", "F1") {}
+    constructor() ERC721("Fauna3", "F3") {}
 
     function safeMint(address to) public {
         uint256 tokenId = _tokenIdCounter.current();
@@ -46,7 +51,7 @@ contract Fauna1 is ERC721URIStorage, Ownable {
     }
 
      function plantTrees(uint256 tokenId, uint256 uri) public onlyOwner {
-        require(uri<3, "URI too high");
+        require(uri<8, "URI too high");
         string memory newUri = faunaUrisIpfs[uri];
         _setTokenURI(tokenId, newUri);
     }

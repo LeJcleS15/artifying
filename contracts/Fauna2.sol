@@ -8,18 +8,20 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 
 
-contract Fauna1 is ERC721URIStorage, Ownable {
+contract Fauna2 is ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
 
     Counters.Counter private _tokenIdCounter;
 
     string[] faunaUrisIpfs = [
-        "https://ipfs.io/ipfs/bafyreifyj3ux7nnzjqzkuhlpwsobxncpa3r2vedh7gpgohp7xakpaxirom/metadata.json",
-        "https://ipfs.io/ipfs/bafyreic3sifkfu2lkt5lzkwxvelusycmfyudmxvuy3wi4om3yrksoblc5e/metadata.json",
-        "https://ipfs.io/ipfs/bafyreigtvt7oigssuu3ebstodpw6svbi5gbnk7mip4pmvi6vrdvgpdewee/metadata.json"
+        "https://ipfs.io/ipfs/bafyreidln2luookclion6ka4547gwheurosaxoq46gzodju5swyepq25le/metadata.json",
+        "https://ipfs.io/ipfs/bafyreibv2jusmakysaimtencvignllkjqrnk57wmxyacrbrwm3nqxxb7em/metadata.json",
+        "https://ipfs.io/ipfs/bafyreibxfwpgxvgnotaguo3ji4bsjy4joi6x7spmll5t6a344oqj6szl6a/metadata.json",
+        "https://ipfs.io/ipfs/bafyreid3w4dry4fpgx457wp5onaf6luorclrg46bzvr6qnu5kjq3miaadu/metadata.json",
+        "https://ipfs.io/ipfs/bafyreiezfm6dxap367qwbzw27kvxsyxzfnztx5myhx2mwg4q6i62fwyxfq/metadata.json"
     ];
 
-    constructor() ERC721("Fauna1", "F1") {}
+    constructor() ERC721("Fauna2", "F2") {}
 
     function safeMint(address to) public {
         uint256 tokenId = _tokenIdCounter.current();
@@ -46,7 +48,7 @@ contract Fauna1 is ERC721URIStorage, Ownable {
     }
 
      function plantTrees(uint256 tokenId, uint256 uri) public onlyOwner {
-        require(uri<3, "URI too high");
+        require(uri<5, "URI too high");
         string memory newUri = faunaUrisIpfs[uri];
         _setTokenURI(tokenId, newUri);
     }

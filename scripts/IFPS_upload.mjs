@@ -1,7 +1,6 @@
 import fs from 'fs';
 import { NFTStorage } from 'nft.storage'
 import dotenv from 'dotenv'
-import { Blob } from 'buffer'
 import mime from 'mime'
 import path from 'path'
 import { File } from 'web3.storage'
@@ -17,20 +16,22 @@ async function storeImage(filepath,filename,textname){
 
     const nft = {
         name: `${textname}`,
-        description: `${textname.slice(0,7)} represents the environment impact of the holder of this NFT, current progress: ${textname.slice(8)}.`,
+        description: `${textname.slice(0,7)} represents the environmental impact of the holder of this NFT. By planting trees the holder has a positive impact on the environment. Current progress is "${textname.slice(8)}" and ${treesPlanted(textname)} trees have been planted.`,
         image: imageFile,
         attributes: [
             {
                 "trait_type": "Progress", 
                 "value": `${textname.slice(8)}`
+              },
+              {
+                "trait_type": "Trees Planted", 
+                "value": `${treesPlanted(textname)}`
               }
         ]
     }
     
-    console.log(nft)
-    // const metadata = await client.store(nft)
-
-    // console.log(metadata)
+    const metadata = await client.store(nft)
+    console.log(textname, metadata)
 }
 
 async function storeAllImages(){
@@ -42,8 +43,53 @@ async function storeAllImages(){
     })
 }
 
-// storeAllImages()
+function treesPlanted(textname){
+    switch(textname.slice(0,7)){
+        case "Fauna 1":
+            switch(textname.slice(8)){
+                case "Stage 1":
+                    return "25.000"
+                case "Stage 1":
+                    return "50.000"
+                case "Complete":
+                    return "75.000"
+        }
+        case "Fauna 2":
+            switch(textname.slice(8)){
+                case "Stage 1":
+                    return "25.000"
+                case "Stage 2":
+                    return "50.000"
+                case "Stage 3":
+                    return "75.000"
+                case "Stage 4":
+                    return "100.000"
+                case "Complete":
+                    return "125.000"
+        }  
+        case "Fauna 3":        
+            switch(textname.slice(8)){
+                case "Stage 1":
+                    return "25.000"
+                case "Stage 2":
+                    return "50.000"
+                case "Stage 3":
+                    return "75.000"
+                case "Stage 4":
+                    return "100.000"
+                case "Stage 5":
+                    return "125.000"
+                case "Stage 6":
+                    return "150.000"
+                case "Stage 7":
+                    return "175.000"
+                case "Complete":
+                    return "200.000"
+        }
+    }
+}
 
-storeImage("src/img/Fauna-1-Complete.jpg", "Fauna-1-Complete.jpg", "Fauna 1 Complete")
-storeImage("src/img/Fauna-1-Stage-1.jpg", "Fauna-1-Stage-1.jpg", "Fauna 1 Stage 1")
+
+
+storeAllImages()
 

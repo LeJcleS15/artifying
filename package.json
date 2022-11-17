@@ -12,6 +12,5 @@
     "nft.storage": "^7.0.0",
     "path": "^0.12.7",
     "web3.storage": "^4.4.0"
-  },
-  "type": "module"
+  }
 }

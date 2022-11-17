@@ -1,0 +1,64 @@
+Fauna 1 Stage 1 Token {
+  ipnft: 'bafyreifyj3ux7nnzjqzkuhlpwsobxncpa3r2vedh7gpgohp7xakpaxirom',
+  url: 'ipfs://bafyreifyj3ux7nnzjqzkuhlpwsobxncpa3r2vedh7gpgohp7xakpaxirom/metadata.json'
+}
+Fauna 1 Stage 2 Token {
+  ipnft: 'bafyreic3sifkfu2lkt5lzkwxvelusycmfyudmxvuy3wi4om3yrksoblc5e',
+  url: 'ipfs://bafyreic3sifkfu2lkt5lzkwxvelusycmfyudmxvuy3wi4om3yrksoblc5e/metadata.json'
+}
+Fauna 1 Complete Token {
+  ipnft: 'bafyreigtvt7oigssuu3ebstodpw6svbi5gbnk7mip4pmvi6vrdvgpdewee',
+  url: 'ipfs://bafyreigtvt7oigssuu3ebstodpw6svbi5gbnk7mip4pmvi6vrdvgpdewee/metadata.json'
+}
+Fauna 2 Stage 1 Token {
+  ipnft: 'bafyreidln2luookclion6ka4547gwheurosaxoq46gzodju5swyepq25le',
+  url: 'ipfs://bafyreidln2luookclion6ka4547gwheurosaxoq46gzodju5swyepq25le/metadata.json'
+}
+Fauna 2 Stage 2 Token {
+  ipnft: 'bafyreibv2jusmakysaimtencvignllkjqrnk57wmxyacrbrwm3nqxxb7em',
+  url: 'ipfs://bafyreibv2jusmakysaimtencvignllkjqrnk57wmxyacrbrwm3nqxxb7em/metadata.json'
+}
+Fauna 2 Stage 3 Token {
+  ipnft: 'bafyreibxfwpgxvgnotaguo3ji4bsjy4joi6x7spmll5t6a344oqj6szl6a',
+  url: 'ipfs://bafyreibxfwpgxvgnotaguo3ji4bsjy4joi6x7spmll5t6a344oqj6szl6a/metadata.json'
+}
+Fauna 3 Stage 4 Token {
+  ipnft: 'bafyreid3w4dry4fpgx457wp5onaf6luorclrg46bzvr6qnu5kjq3miaadu',
+  url: 'ipfs://bafyreid3w4dry4fpgx457wp5onaf6luorclrg46bzvr6qnu5kjq3miaadu/metadata.json'
+}
+Fauna 2 Complete Token {
+  ipnft: 'bafyreiezfm6dxap367qwbzw27kvxsyxzfnztx5myhx2mwg4q6i62fwyxfq',
+  url: 'ipfs://bafyreiezfm6dxap367qwbzw27kvxsyxzfnztx5myhx2mwg4q6i62fwyxfq/metadata.json'
+}
+Fauna 3 Stage 1 Token {
+  ipnft: 'bafyreidperpqa4wgmpbetzj6lepdtkt7qxqdggatffiyt6oasolp6ojita',
+  url: 'ipfs://bafyreidperpqa4wgmpbetzj6lepdtkt7qxqdggatffiyt6oasolp6ojita/metadata.json'
+}
+Fauna 3 Stage 2 Token {
+  ipnft: 'bafyreidrr2oulgcckaechjn35uh5cdmuznpg3gnfxjddlh2xxolayhgfpq',
+  url: 'ipfs://bafyreidrr2oulgcckaechjn35uh5cdmuznpg3gnfxjddlh2xxolayhgfpq/metadata.json'
+}
+Fauna 3 Stage 3 Token {
+  ipnft: 'bafyreifiqtpjqrvtvsg3thgfmgkicjyyfz7qjvqrcyo4gtdcwg5sqaiuoq',
+  url: 'ipfs://bafyreifiqtpjqrvtvsg3thgfmgkicjyyfz7qjvqrcyo4gtdcwg5sqaiuoq/metadata.json'
+}
+Fauna 2 Stage 4 Token {
+  ipnft: 'bafyreiak26kbobfpvufhoimuragjemgeprmuwcmgosor6khusfatktmada',
+  url: 'ipfs://bafyreiak26kbobfpvufhoimuragjemgeprmuwcmgosor6khusfatktmada/metadata.json'
+}
+Fauna 3 Stage 5 Token {
+  ipnft: 'bafyreia2cmijlhqsahqhji7nb4ghz5oib4s33ktzw4oswyp4q4rfjb3uai',
+  url: 'ipfs://bafyreia2cmijlhqsahqhji7nb4ghz5oib4s33ktzw4oswyp4q4rfjb3uai/metadata.json'
+}
+Fauna 3 Stage 6 Token {
+  ipnft: 'bafyreieayv2ikxeogwvz3wiagut4ubifbtzd5o3f2mqqzfsebde2kijly4',
+  url: 'ipfs://bafyreieayv2ikxeogwvz3wiagut4ubifbtzd5o3f2mqqzfsebde2kijly4/metadata.json'
+}
+Fauna 3 Stage 7 Token {
+  ipnft: 'bafyreic2kbor47z67fl54k5wnjhvccduytop2itbn6cg4uiic5usinhw7u',
+  url: 'ipfs://bafyreic2kbor47z67fl54k5wnjhvccduytop2itbn6cg4uiic5usinhw7u/metadata.json'
+}
+Fauna 3 Complete Token {
+  ipnft: 'bafyreihry5prrixl4uplnncruntu72dzestqoceenpoekd7zv7ypyv73mi',
+  url: 'ipfs://bafyreihry5prrixl4uplnncruntu72dzestqoceenpoekd7zv7ypyv73mi/metadata.json'
+}
