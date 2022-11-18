@@ -1,13 +1,8 @@
-# Sample Hardhat Project
+# Artifying Impact
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project features dNFTs which visualizes the proof of impact created with the choosem carbon theme for eg: Fauna Series (trees planted), Ocean Seies (Cleaning Oceans) and more. As we progress though the environmental goals the images of the dNFTs will change. 
 
-Try running some of the following tasks:
+For now we are manually changing the images because we lack on-chain Proof of Impact to verify the IRL environmental impact. In the future we will implement Chainlink Keepers/upkeep and Chainlink Any API. This will allow us to collect real life data into our smart contracts. This data is then used to check if the dNFT should change the image.
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+For the file storage we used NFT.storage API. A script is created 'IPFS_upload'. Here we upload our images and metadata to IPFS. In this example we used Fauna (planting trees). There are 3 collections within Fauna, all have different stages that reflect IRL environmental impact.
+
